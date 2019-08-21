@@ -2,14 +2,18 @@ backend:
   name: git-gateway
   branch: master
 
-media_folder: static/img
 public_folder: /img
-
 media_library:
   name: cloudinary
   config:
     cloud_name: thciq
     api_key: 863193253746471
+    config:
+            default_transformations:
+              -   - fetch_format: auto
+                    width: 300    
+                    quality: auto
+                    crop: fill
 
 collections:
   - name: "blog"
@@ -76,13 +80,6 @@ collections:
       - {label: "Publish Date", name: "date", widget: "datetime"}
       - {label: "Description", name: "description", widget: "text"}
       - {label: "Featured Post", name: "featuredpost", widget: "boolean"}
-      - {label: "Featured Image", name: "featuredimage", widget: image,
-          media_library:
-          config:
-            default_transformations:
-              -   - fetch_format: auto
-                    width: 300    
-                    quality: auto
-                    crop: fill}
+      - {label: "Featured Image", name: "featuredimage", widget: image}
       - {label: "Body", name: "body", widget: "markdown"}
       - {label: "Tags", name: "tags", widget: "list"}
