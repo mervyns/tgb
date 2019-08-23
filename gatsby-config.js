@@ -1,3 +1,4 @@
+require("dotenv").config();
 var proxy = require('http-proxy-middleware')
 
 module.exports = {
@@ -61,6 +62,14 @@ module.exports = {
         ],
       },
     },
+    {
+      resolve:`gatsby-source-cloudinary`,
+      options:{
+      cloudName: 'thciq',
+      apiKey: '863193253746471',
+      apiSecret: process.env.CLOUDINARY_API_SECRET
+      }
+  },
     {
       resolve: 'gatsby-plugin-netlify-cms',
       options: {

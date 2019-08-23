@@ -1,5 +1,5 @@
 ---
-templateKey: blog-post
+templateKey: news-post
 title: The Winners of the 2019 Detroit Cannabis Cup
 date: 2019-08-21T09:37:32.146Z
 description: >-
