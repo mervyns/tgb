@@ -7,13 +7,13 @@ import Img from 'gatsby-image';
 
 class AdBanner extends React.Component {
   render() {
-    console.log(this.props)
+    console.log(this.props);
     return (
-            <Container>
-              <a href="https://www.google.com">
-              <ImgStyled src={this.props.data.allCloudinaryMedia.edges[0].node.secure_url} />
-              </a>
-            </Container>
+      <Container>
+        <a href={this.props.link}>
+          <ImgStyled src={this.props.src} />
+        </a>
+      </Container>
     );
   }
 }
@@ -41,19 +41,4 @@ AdBanner.propTypes = {
   })
 };
 
-export default () => (
-  <StaticQuery
-    query={graphql`
-    query MyQuery {
-      allCloudinaryMedia(filter: {tags: {eq: "ads"}}) {
-        edges {
-          node {
-            secure_url
-          }
-        }
-      }
-    }
-    `}
-    render={(data, count) => <AdBanner data={data} count={count} />}
-  />
-);
+export default AdBanner
