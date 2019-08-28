@@ -3,9 +3,8 @@ import PropTypes from 'prop-types'
 import { Link, graphql } from 'gatsby'
 
 import Layout from '../components/Layout'
-import Features from '../components/Features'
-import BlogRoll from '../components/BlogRoll'
 import NewsFeed from '../components/NewsFeed'
+import AdBanner from '../components/AdBanner'
 
 export const IndexPageTemplate = ({
   image,
@@ -67,6 +66,7 @@ export const IndexPageTemplate = ({
     </div>
     <section className="section section--gradient">
       <div className="container">
+      <AdBanner />
       <NewsFeed/>
       </div>
     </section>

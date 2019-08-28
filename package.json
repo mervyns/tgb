@@ -4,6 +4,8 @@
   "version": "1.1.3",
   "author": "Austin Green",
   "dependencies": {
+    "@dylanvann/gatsby-remark-cloudinary": "^0.0.13",
+    "@dylanvann/gatsby-transformer-cloudinary": "^1.0.36",
     "antd": "^3.22.0",
     "bulma": "^0.7.0",
     "dotenv": "^8.1.0",

@@ -11,7 +11,6 @@ media_library:
     config:
             default_transformations:
               -   - fetch_format: auto
-                    width: 300    
                     quality: auto
                     crop: fill
 
@@ -73,9 +72,9 @@ collections:
     label: "Newsfeed"
     folder: "src/pages/newsfeed"
     create: true
-    slug: "{{slug}}"
+    slug: "{{slug}}-{{month}}-{{year}}"
     fields:
-      - {label: "Template Key", name: "templateKey", widget: "hidden", default: "news-post"}
+      - {label: "Template Key", name: "templateKey", widget: "hidden", default: "blog-post"}
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Publish Date", name: "date", widget: "datetime"}
       - {label: "Description", name: "description", widget: "text"}
@@ -83,3 +82,19 @@ collections:
       - {label: "Featured Image", name: "featuredimage", widget: image}
       - {label: "Body", name: "body", widget: "markdown"}
       - {label: "Tags", name: "tags", widget: "list"}
+
+  - name: "Adverts"
+    label: "Adverts"
+    folder: "src/pages/adverts"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {label: "Template Key", name: "templateKey", widget: "hidden", default: "advert-post"}
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Description", name: "description", widget: "text"}
+      - {label: "Banner Image", name: "bannerimage", widget: image}
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Link", name: "link", widget: "string"}
+      - {label: "Tags", name: "tags", widget: "list"}
+
+  
