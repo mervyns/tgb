@@ -1,10 +1,37 @@
 ---
 templateKey: blog-post
-title: Making sense of the SCAA’s new Flavor Wheel
-date: 2016-12-17T15:04:10.000Z
+title: 'New York Marijuana: Statewide Decriminalization Takes Effect Today'
+date: 2019-08-29T14:04:10.000Z
+description: >-
+  NEW YORK (CBSNewYork) – A New York State law decriminalizing marijuana takes
+  effect today.
+
+  Gov. Andrew Cuomo signed the measure last month.
+
+  “Communities of color have been disproportionately impacted by laws governing
+  marijuana for far too long, and today we are ending this injustice once and
+  for all,” he said in a statement at the time. “By providing individuals who
+  have suffered the consequences of an unfair marijuana conviction with a path
+  to have their records expunged and by reducing draconian penalties, we are
+  taking a critical step forward in addressing a broken and discriminatory
+  criminal justice process.”
+
+
+  Under the new law, residents with low-level marijuana convictions will
+  automatically have their records expunged.
+
+  The New York State Division of Criminal Justice Services estimates nearly
+  14,000 people from the five boroughs and nearly 11,000 others statewide will
+  qualify.
+
+  Also under the new law, marijuana possession under two ounces will be
+  considered a violation, instead of a criminal offense.
+
+
+  The penalty is $50 for possessing less than an ounce, or a maximum of $200 for
+  1-2 ounces.
 featuredpost: false
 featuredimage: /img/flavor_wheel.jpg
-description: The Coffee Taster’s Flavor Wheel, the official resource used by coffee tasters, has been revised for the first time this year.
 tags:
   - flavor
   - tasting
