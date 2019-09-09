@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { Link, graphql } from 'gatsby';
-
+import styled from 'styled-components';
 import Layout from '../components/Layout';
 import NewsFeed from '../components/NewsFeed';
 import AdBanner from '../components/AdBanner';
@@ -83,28 +83,38 @@ IndexPageTemplate.propTypes = {
 };
 
 const IndexPage = ({ data }) => {
-  console.log(data)
+  console.log(data);
   const { frontmatter } = data.index;
 
   return (
     <Layout>
-      <IndexPageTemplate
-        image={frontmatter.image}
-        title={frontmatter.title}
-        heading={frontmatter.heading}
-        subheading={frontmatter.subheading}
-        mainpitch={frontmatter.mainpitch}
-        description={frontmatter.description}
-        intro={frontmatter.intro}
-      />
-      <AdBanner
-        link={data.advert.frontmatter.link}
-        src={data.advert.frontmatter.bannerimage}
-      />
-      <NewsFeed />
+      <Container>
+        <SmallerContainer>
+        <AdBanner
+          link={data.advert.frontmatter.link}
+          src={data.advert.frontmatter.bannerimage}
+        />
+        <NewsFeed />
+        </SmallerContainer>
+      </Container>
     </Layout>
   );
 };
+
+const Container = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-self: center;
+`;
+
+const SmallerContainer = styled.div`
+  width: 75%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-self: center;
+`;
 
 IndexPage.propTypes = {
   data: PropTypes.shape({

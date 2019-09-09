@@ -12,6 +12,7 @@ class Newsfeed extends React.Component {
 
     return (
       <React.Fragment>
+        <Heading>Latest News from Around the World</Heading>
         {posts &&
           posts.map(({ node: post }) => (
             <Container>
@@ -47,7 +48,12 @@ const Container = styled.div`
   border-bottom: 2px solid #999;
   padding-top: 20px;
   padding-bottom: 20px;
-  display: flexbox;
+  display: flex;
+  justify-content: center;
+`;
+
+const Heading = styled.h1`
+  font-size: 1.3em;
 `;
 
 const TitleContainer = styled.div`

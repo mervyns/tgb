@@ -83,6 +83,31 @@ collections:
       - {label: "Body", name: "body", widget: "markdown"}
       - {label: "Tags", name: "tags", widget: "list"}
 
+  - name: "Gallery"
+    label: "Gallery"
+    folder: "src/pages/gallery"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {label: "Template Key", name: "templateKey", widget: "hidden", default: "gallery-post"}
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Image", name: "galleryImage", widget: image}
+      - {label: "Description", name: "description", widget: "text"}
+      - {label: "Alt Text for crawlers", name: "alt", widget: "string"}
+      - {label: "Tags", name: "tags", widget: "list"}
+
+  - name: "Recipes"
+    label: "Recipes"
+    folder: "src/pages/recipes"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {label: "Template Key", name: "templateKey", widget: "hidden", default: "recipes-post"}
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Cover Image", name: "coverimage", widget: image}
+      - {label: "Description", name: "description", widget: "text"}
+      - {label: "Tags", name: "tags", widget: "list"}
+
   - name: "Adverts"
     label: "Adverts"
     folder: "src/pages/adverts"
@@ -93,8 +118,9 @@ collections:
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Description", name: "description", widget: "text"}
       - {label: "Banner Image", name: "bannerimage", widget: image}
-      - {label: "Title", name: "title", widget: "string"}
       - {label: "Link", name: "link", widget: "string"}
       - {label: "Tags", name: "tags", widget: "list"}
+
+
 
   

@@ -10,9 +10,9 @@ class AdBanner extends React.Component {
     console.log(this.props);
     return (
       <Container>
-        <a href={this.props.link}>
+        <StyledLink href={this.props.link}>
           <ImgStyled src={this.props.src} />
-        </a>
+        </StyledLink>
       </Container>
     );
   }
@@ -21,10 +21,16 @@ class AdBanner extends React.Component {
 const Container = styled.div`
   padding-top: 20px;
   padding-bottom: 20px;
-  display: flexbox;
+  display: flex;
+  justify-content: center;
 `;
 
-export const ImgStyled = styled.img`
+const StyledLink = styled.a`
+  display: flex;
+  align-content: center;
+`;
+
+const ImgStyled = styled.img`
   display: flexbox;
   max-height: 350px;
   height: auto;
@@ -41,4 +47,4 @@ AdBanner.propTypes = {
   })
 };
 
-export default AdBanner
+export default AdBanner;
